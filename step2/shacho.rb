@@ -1,8 +1,8 @@
 # coding: utf-8
-require "./shain"
-require "./tanto"
-require "./shunin"
-require "./bucho"
+require_relative "shain"
+require_relative "tanto"
+require_relative "shunin"
+require_relative "bucho"
 
 class Shacho
   attr_accessor :shains
@@ -19,14 +19,14 @@ class Shacho
   def say_kiritsu
     @syain.kiritsu
   end
+
   def say_kyuryo
     @syain.say_kyuryo
   end
 end
 
 if __FILE__ == $0
-  p ARGV
-  name, kihonkyu = *ARGV
+  name, kihonkyu = ARGV
   shacho = Shacho.new
   shain  = Shain.create(name, kihonkyu)
   shacho.manage(shain)

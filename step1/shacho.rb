@@ -1,8 +1,8 @@
 # coding: utf-8
-require "./shain"
-require "./tanto"
-require "./shunin"
-require "./bucho"
+require_relative "shain"
+require_relative "tanto"
+require_relative "shunin"
+require_relative "bucho"
 
 class Shacho
   attr_accessor :shains
