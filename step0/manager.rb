@@ -1,5 +1,5 @@
 # coding: utf-8
-require "./ningen"
+require_relative "ningen"
 
 class Manager
   class << self
