@@ -21,4 +21,9 @@ class ObjectExec < Thor
     run 'ruby step2/shacho.rb Shunin 100'
     run 'ruby step2/shacho.rb Bucho 100'
   end
+
+  desc "composite3", "4.5 Mr.デザインパターン：コンポジット(Composite) パターン"
+  def composite3
+    run 'ruby composite3/manager.rb'
+  end
 end

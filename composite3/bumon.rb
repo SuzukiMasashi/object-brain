@@ -12,8 +12,8 @@ class Bumon < Party
     @parties << party
   end
 
-  def hyoji
-    puts ["="*5, @name, "="*5].join(" ")
+  def hyoji(quote="="*5)
+    puts [quote, @name, quote].join(" ")
     @parties.each(&:hyoji)
   end
 end
