@@ -1,6 +1,6 @@
 # coding: utf-8
 
-class ObjectExec < Thor
+class ObjectBrain < Thor
   include Thor::Actions
 
   desc "step0", "3.1 社長命令・起立！"
@@ -20,6 +20,11 @@ class ObjectExec < Thor
     run 'ruby step2/shacho.rb Tanto 100'
     run 'ruby step2/shacho.rb Shunin 100'
     run 'ruby step2/shacho.rb Bucho 100'
+  end
+
+  desc "composite2", "4.4.2 委譲"
+  def composite2
+    run 'ruby composite2/manager.rb'
   end
 
   desc "composite3", "4.5 Mr.デザインパターン：コンポジット(Composite) パターン"
