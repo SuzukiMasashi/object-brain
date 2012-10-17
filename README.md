@@ -1,4 +1,4 @@
-object
+object-brain
 ======
 
 オブジェクト脳のつくり方
