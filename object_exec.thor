@@ -31,4 +31,11 @@ class ObjectBrain < Thor
   def composite3
     run 'ruby composite3/manager.rb'
   end
+
+  desc "template2", "4.6 重複コードの天敵！テンプレートメソッド(Template Method)パターン"
+  def template2
+    run 'ruby template2/shacho.rb Tanto 牛尾 100'
+    run 'ruby template2/shacho.rb Shunin 菅原 100'
+    run 'ruby template2/shacho.rb Bucho Jackson 100'
+  end
 end
